@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    }
+
+body {
+      background-color: purple;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+#title {
+      text-align: center;
+      margin: 5vh auto;
+   }
+
+#text-box {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      color: #333;                       
+    }
+
+#para {
+       padding: 1vh;
+       font-weight: 600;
+     }
+
+#text-input {
+        margin: 2vh;
+        border-radius:5px;
+        border: 1px solid navy;
+   }
+
+#result {
+        margin: 2vh;
+     }
