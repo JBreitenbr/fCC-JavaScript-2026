@@ -1,0 +1,39 @@
+/* Build a Leap Year Calculator
+
+A leap year is a year that is divisible by 4, except for years that are divisible by 100 and not divisible by 400. For example, 2000 is a leap year, but 1900 is not. Also, a leap year has an extra day in February, which is the 29th day of the month.
+
+Objective: Fulfill the user stories below and get all the tests to pass to complete the lab.
+
+User Stories:
+
+Define a function called isLeapYear that takes a number as an argument.
+
+Outside the function, declare a variable year that stores the value of the year you want to check.
+
+Inside the function, use an if/ else statement or a ternary operator to check if the year is a leap year.
+
+To check if the year is a leap year, fulfill the following conditions:
+
+If the year is divisible by 4, then it is a leap year.
+Unless the year is also divisible by 100, then it is not a leap year.
+Unless the year is also divisible by 400, then it is a leap year.
+If the year is a leap year, return [year] is a leap year.. Otherwise, return [year] is not a leap year.. You will replace [year] with the parameter defined in the isLeapYear function.
+
+You should call the isLeapYear function with year as the argument and assign the result to a variable named result.
+
+You should output the result variable to the console using console.log(). */
+
+let year=2000;
+const isLeapYear=(year)=>{
+  let cond1=year%4==0;
+  let cond2=year%100==0;
+  let cond3=year%400==0;
+  let boolVar;
+  if(!cond1) boolVar=false;
+  else {
+     boolVar=cond2?(cond3?true:false):true;
+  }
+  return boolVar?""+year+" is a leap year.":""+year+" is not a leap year.";
+}
+let result=isLeapYear(year);
+console.log(result);
